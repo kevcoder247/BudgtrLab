@@ -11,7 +11,7 @@ app.get('/budgets', (req, res) => {
 })
 //Show
 app.get('/budgets/:index', (req, res) => {
-    res.send('Budgtr Show')
+    res.render('show.ejs')
 })
 
 //New

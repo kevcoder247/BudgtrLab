@@ -11,28 +11,23 @@
     <title>Index</title>
 </head>
 <body>
-    <h1>Budgtr</h1>
     
     <ul>
-        <!-- <% for(let i = 0; i < budget.length; i++){ %>
-            <li><%=budget[i].date%></li>
-            <li><%=budget[i].name%></li>
-            <li><%=budget[i].from%></li>
-            <li>$<%=budget[i].amount%></li>
-            <li><%=budget[i].tags%></li>
-            <br>
-        <% } %> -->
+    <div class="container">
+        <h1>Budgtr</h1>
         <div class="row table">
            <% for(let i = 0; i < budget.length; i++){ %>
             <table class="u-full-width">
                 <tr>
                     <td><%= budget[i].date %></td>
-                    <td><%= budget[i].name %></td>
+                    <td><a href="/"><%= budget[i].name %></a></td>
                     <td><%= budget[i].amount %></td>
                 </tr>
             </table>
                <% } %>
         </div>
+    </div>
+        <!-- end of table  -->
     </ul>
 </body>
 </html>
