@@ -23,18 +23,15 @@
             <br>
         <% } %> -->
         <div class="row table">
+           <% for(let i = 0; i < budget.length; i++){ %>
             <table class="u-full-width">
                 <tr>
-                    <td><%= budget[0].date %></td>
-                    <td><%= budget[0].name %></td>
-                    <td><%= budget[0].amount %></td>
-                </tr>
-                <tr>
-                    <td><%= budget[1].date %></td>
-                    <td><%= budget[1].name %></td>
-                    <td><%= budget[1].amount %></td>
+                    <td><%= budget[i].date %></td>
+                    <td><%= budget[i].name %></td>
+                    <td><%= budget[i].amount %></td>
                 </tr>
             </table>
+               <% } %>
         </div>
     </ul>
 </body>
