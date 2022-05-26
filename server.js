@@ -5,21 +5,22 @@ const port = 3000;
 
 //Routes
 
-//Index
+//Index=================
 app.get('/budgets', (req, res) => {
     res.render('index.ejs', {budget: budget})
 })
-//Show
+
+//New==================
+app.get('/budgets/new', (req, res) => {
+    res.render('new.ejs')
+})
+
+//Show==================
 app.get('/budgets/:index', (req, res) => {
     res.render('show.ejs', {budget: budget[req.params.index]})
 })
 
-//New
-app.get('/budgets/new', (req, res) => {
-    res.send('Budgtr New')
-})
-
-//Create
+//Create===============
 app.post('/butgets', (req, res) => {
     res.send('Budgtr Under construction')
 })
