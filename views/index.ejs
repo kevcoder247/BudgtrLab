@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    
+    <title>Index</title>
+</head>
+<body>
+    <h1>Budgtr</h1>
+    
+    <ul>
+        <!-- <% for(let i = 0; i < budget.length; i++){ %>
+            <li><%=budget[i].date%></li>
+            <li><%=budget[i].name%></li>
+            <li><%=budget[i].from%></li>
+            <li>$<%=budget[i].amount%></li>
+            <li><%=budget[i].tags%></li>
+            <br>
+        <% } %> -->
+        <div class="row table">
+            <table class="u-full-width">
+                <tr>
+                    <td><%= budget[0].date %></td>
+                    <td><%= budget[0].name %></td>
+                    <td><%= budget[0].amount %></td>
+                </tr>
+                <tr>
+                    <td><%= budget[1].date %></td>
+                    <td><%= budget[1].name %></td>
+                    <td><%= budget[1].amount %></td>
+                </tr>
+            </table>
+        </div>
+    </ul>
+</body>
+</html>
