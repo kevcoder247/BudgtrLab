@@ -12,11 +12,18 @@
 </head>
 <body>
     
-    <ul>
     <div class="container">
-        <h1>Budgtr</h1>
+      
+        
+            <h1>Budgtr</h1>
+        
+        <nav>
+           <button> <a href="/budgets/new">Create New Entry</a></button>
+        </nav>
+
         <div class="row table">
-           <% for(let i = 0; i < budget.length; i++){ %>
+            <ul>
+            <% for(let i = 0; i < budget.length; i++){ %>
             <table class="u-full-width">
                 <tr>
                     <td><%= budget[i].date %></td>
@@ -26,8 +33,9 @@
             </table>
                <% } %>
         </div>
+        </ul>
     </div>
         <!-- end of table  -->
-    </ul>
+   
 </body>
 </html>
