@@ -1,4 +1,3 @@
-
 const budget = [
     {
       date: "April 1",

@@ -15,14 +15,19 @@ app.get('/budgets/new', (req, res) => {
     res.render('new.ejs')
 })
 
+//Create===============
+app.post('/butgets', (req, res) => {
+    res.send('Budgtr Post')
+})
+
+app.post('/fruits', (req, res) => {
+    res.send('post page')
+})
+
+
 //Show==================
 app.get('/budgets/:index', (req, res) => {
     res.render('show.ejs', {budget: budget[req.params.index]})
-})
-
-//Create===============
-app.post('/butgets', (req, res) => {
-    res.send('Budgtr Under construction')
 })
 
 app.listen(port, () => {
