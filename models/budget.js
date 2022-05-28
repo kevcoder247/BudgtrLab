@@ -18,7 +18,7 @@ const budget = [
       name: "Retirement",
       from: "Country Bank",
       amount: -200,
-      tags: ["retirement", "investing in the future"],
+      tags: ["retirement",  "investing in the future"],
     },
     {
       date: "April 1",

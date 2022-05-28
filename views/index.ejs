@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="/public/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    
-    <title>Index</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     
@@ -24,10 +23,13 @@
         <div class="row table">
             <ul>
             <% for(let i = 0; i < budget.length; i++){ %>
-            <table class="u-full-width">
-                <tr>
+            <table >
+                <tr >
+                    <!-- date -->
                     <td><%= budget[i].date %></td>
+                    <!-- name -->
                     <td><a href="/budgets/<%=i%>"><%= budget[i].name %></a></td>
+                    <!-- amount -->
                     <td><%= budget[i].amount %></td>
                 </tr>
             </table>

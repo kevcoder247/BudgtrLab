@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="/css/main.css">
     <title>New EJS</title>
 </head>
 <body>
     <div class="container">
-        <h1>NEW EJS</h1>
+        <h1>Make A New Entry</h1>
 
         <form action="/budgets" method="POST">
-            Date: <input type="text" date="date"><br>
-            Name: <input type="text"  name="name"><br>
-            Amount: <input type="number"  amount="amount"><br>
-            From: <input type="text"  from="from" ><br>
-            Tags: <input type="text"  tags="tags" ><br>
+            <input type="date" name="date" placeholder="Enter Date"><br>
+            
+            <input type="text"  name="name" placeholder="Name"><br>
+            
+            <input type="number"  name="amount" placeholder="Amount"><br>
+            
+            <input type="text"  name="from" placeholder="From" ><br>
+            
+            <input type="text"  name="tags" placeholder="Tags"><br>
+            
             <input type="submit"  submit="submit" value="Create">
         </form>
     </div>
